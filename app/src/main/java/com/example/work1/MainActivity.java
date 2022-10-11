@@ -104,25 +104,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ft.show(fragment_1);
                 imageView1.setImageResource(R.drawable.wx);
                 textView_top.setText(R.string.weixin);
-                textView1.setTextColor(R.color.gg);
+                textView1.setTextColor(R.color.bluegreen);
                 break;
             case 2:
                 ft.show(fragment_2);
                 imageView2.setImageResource(R.drawable.tongxunlu);
                 textView_top.setText(R.string.tongxunlu);
-                textView2.setTextColor(R.color.gg);
+                textView2.setTextColor(R.color.bluegreen);
                 break;
             case 3:
                 ft.show(fragment_3);
                 imageView3.setImageResource(R.drawable.faxian);
                 textView_top.setText(R.string.faxian);
-                textView3.setTextColor(R.color.gg);
+                textView3.setTextColor(R.color.bluegreen);
                 break;
             case 4:
                 ft.show(fragment_4);
                 imageView4.setImageResource(R.drawable.my);
                 textView_top.setText(R.string.wo);
-                textView4.setTextColor(R.color.gg);
+                textView4.setTextColor(R.color.bluegreen);
                 break;
         }
         ft.commit();

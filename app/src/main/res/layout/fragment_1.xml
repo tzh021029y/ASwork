@@ -5,10 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".Fragment_1">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/weixin" />
-
+        android:layout_height="match_parent" />
 </FrameLayout>
