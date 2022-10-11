@@ -27,11 +27,11 @@ public class Fragment_1 extends Fragment {
         view = inflater.inflate(R.layout.fragment_1, container, false);
         recyclerView = view.findViewById(R.id.rec1);
         List<String> list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             list.add("这是第" + i + " 个列表");
         }
-        list.add("杀杀杀");
-        list.add("防擦撒");
+        list.add("aaaa");
+        list.add("bbbb");
 
         Context context = getContext();
         Myadapter adapter = new Myadapter(context, list);
