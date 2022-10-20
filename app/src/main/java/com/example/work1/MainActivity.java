@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -20,7 +21,47 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private LinearLayout linearLayout1,linearLayout2,linearLayout3,linearLayout4;
     private ImageView imageView1,imageView2,imageView3,imageView4;
     private Fragment fragment_1,fragment_2,fragment_3,fragment_4;
-    private TextView textView1,textView2,textView3,textView4;
+    private TextView textView1;
+    private TextView textView2;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("aaa","onstart");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("aaa","onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("aaa","onDestroy");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("aaa","onPause");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("aaa","onResume");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("aaa","onRestart");
+    }
+
+    private TextView textView3;
+    private TextView textView4;
     private FragmentManager fragmentManager;
 
     @Override
@@ -34,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .hide(fragment_3)
                 .hide(fragment_4);
         ft.commit();
+        Log.d("aaa","onCreate");
     }
 
     private void fragmentinit() {
@@ -149,6 +191,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             .hide(fragment_4);
 
     }
+
 
 
 }
